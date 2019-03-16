@@ -1,0 +1,105 @@
+#basketPage{
+    background-image: url("../img/main-backgroundmin.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+section.basket_section{
+    padding: 60px 0;
+    .divTable{
+        overflow: auto;
+    }
+    .table td, .table th{
+        border: none;   
+    }
+    .table{
+        background: rgba(0, 0, 0, 0.7);
+        thead{
+            background: #F5F5F5;
+            tr{
+                th{
+                    border: none;
+                }
+            }
+        }
+        tbody{
+            tr{
+                border-bottom: 1px solid #eee;
+                &:last-child{
+                    border: none;
+                }
+                th{
+                    vertical-align: middle;
+                    .removeGood{
+                        cursor: pointer;
+                    }
+                    line-height: 33px;
+                    font-size: 18px;
+
+                    color: #fff;
+                }
+                td{
+                    vertical-align: middle;
+                    line-height: 33px;
+                    font-size: 18px;
+
+                    color: #fff;
+                    .goodName{
+                        display: flex;
+                        align-items: center;
+                        &_img{
+                            max-width: 50px;
+                            margin-right: 15px;
+                        }
+                        p{
+                            line-height: 33px;
+                            font-size: 18px;
+
+                            color: #fff;
+                        }
+                    }
+                    .countGood{
+                        span{
+                            margin: 0 3px;
+                            line-height: 33px;
+                            font-size: 18px;
+        
+                            color: #fff;
+                            &.minusCount{
+                                cursor: pointer;
+                            }
+                            &.plusCount{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .basket_section_button{
+        line-height: normal;
+        font-size: 18px;
+        text-align: center;
+        width: 270px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        background: #01c6b8;
+        border: none;
+        padding: 14px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        cursor: pointer;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    }
+}

@@ -1,0 +1,38 @@
+.menu_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: auto;
+    z-index: 99;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 74px;
+    transition: all .4s ease-out;
+    transform: translateX(-100%);
+    &.active{
+        transform: none;
+    }
+    &_link{
+        padding: 15px 30px;
+        border-top: 1px solid #333;
+        font-size: 18px;
+        text-decoration: none;
+        &:hover{
+            background: #55677c;
+            color: #fff;
+            text-decoration: none;
+        }
+        &:last-child{
+            border-bottom: 1px solid #333;
+        }
+    }
+    &_closer{
+        width: 24px;
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        cursor: pointer;
+    }
+}

@@ -67,6 +67,11 @@ section.partners_section{
         z-index: 2;
         max-width: 1000px;
         width: 100%;
+        .carousel-item{
+            img{
+                width: 100%;
+            }
+        }
         &_img{
             width: 100%;
         }

@@ -1,0 +1,29 @@
+@media screen and (max-width: 850px){
+    .header_list_links{
+        display: none;
+    }
+    .header_list_lang .text_media {
+        display: none;
+    }
+    header.header .header_list_links_item svg{
+        width: 20px;
+    }
+    .header.header .menu_btn{
+        display: block;
+    }
+}
+
+@media screen and (max-width:600px){
+    section.services_section .services_container_item .title{
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width:425px){
+    section.services_section .services_container_item{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+}

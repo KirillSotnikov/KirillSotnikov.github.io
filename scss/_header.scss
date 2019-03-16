@@ -18,6 +18,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     .header_bottom{
         background: rgba(0,0,0,0.5);
     }
+    .menu_btn{
+        width: 30px;
+        display: none;
+        cursor: pointer;
+    }
     .header_list{
         width: 100%;
         display: flex;
