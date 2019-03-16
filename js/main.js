@@ -5,6 +5,10 @@ switch (pageId) {
         modalPartner();
         break;
     }
+    case 'productItem':{
+        modalPartner();
+        break;
+    }
 }
 
 function modalPartner(){
@@ -14,10 +18,13 @@ function modalPartner(){
         $('.modal_partner_container_img').attr('src', imgSrc);
         
         $('.modal_partner').addClass('active');
+
+        $('html').css('overflow', 'hidden');
     });
 
     $('.close_btn').on('click', function(){
         $('.modal_partner').removeClass('active');
         $('.modal_partner_container_img').attr('src', '');
+        $('html').css('overflow', 'auto');
     });
 }
