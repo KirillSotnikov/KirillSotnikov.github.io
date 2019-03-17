@@ -25,6 +25,9 @@ switch (pageId) {
         modalPartner();
         break;
     }
+    case 'basketPage': {
+        menuFunc();
+    }
 }
 
 function dropdownAdvantage(){
