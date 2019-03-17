@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="libs/bootstrap-4.2.1/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="libs/bootstrap-4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/bootstrap-4.2.1/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -131,45 +133,162 @@
     </header>
 
 
-    <main id="productsPage">
-        <section class="services_section">
+    <main id="singleProduct">
+        <section class="sale_product">
             <div class="wrapper">
-                <div class="services_container">
-                    <div class="services_container_item">
-                        <img src="img/prod1.png" alt="" class="services_container_item_img">
-                        <div class="services_container_item_text">
-                            <p class="desc">100% de haya</p>
-                            <p class="title">LAMINAS Y REPUESTOS</p>
-                            <a href="category.html" class="btn">Repasar</a>
+                <div class="sale_container row">
+                    <a href="#" class="sale_container_item col-12 col-md-6 d-none d-md-block">
+                        <img src="img/sale1.png" alt="" class="sale_container_item_img">
+                    </a>
+                    <a href="#" class="sale_container_item col-12 col-md-6">
+                        <img src="img/sale2.png" alt="" class="sale_container_item_img">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="product_slider">
+            <div class="wrapper">
+                <p class="product_title">Somier Dorsal</p>
+                <p class="product_subtitle">Somier Dorsal Viscozhen</p>
+                <div class="product_container row">
+                    <div class="product_container_slider col-12 col-md-9">
+                        <div class="product_container_slider_big slider">
+                            <div class="slide">
+                                <img src="img/cat2.jpg" alt="" class="product_container_slider_big_img">
+                            </div>
+                            <div class="slide">
+                                <img src="img/cat1'.jpg" alt="" class="product_container_slider_big_img">
+                            </div>
+                            <div class="slide">
+                                <img src="img/cat2.jpg" alt="" class="product_container_slider_big_img">
+                            </div>
+                            <div class="slide">
+                                <img src="img/cat1'.jpg" alt="" class="product_container_slider_big_img">
+                            </div>
+                        </div>
+                        <div class="product_container_slider_small slider">
+                            <div class="slide">
+                                <img src="img/cat2.jpg" alt="" class="product_container_slider_small_img">
+                            </div>
+                            <div class="slide">
+                                <img src="img/cat1'.jpg" alt="" class="product_container_slider_small_img">
+                            </div>
+                            <div class="slide">
+                                <img src="img/cat2.jpg" alt="" class="product_container_slider_small_img">
+                            </div>
+                            <div class="slide">
+                                <img src="img/cat1'.jpg" alt="" class="product_container_slider_small_img">
+                            </div>
                         </div>
                     </div>
-                    <div class="services_container_item">
-                        <img src="img/prod2.png" alt="" class="services_container_item_img">
-                        <div class="services_container_item_text">
-                            <p class="desc">Hacemos profesionalmente</p>
-                            <p class="title">SOMIERES DE HAYA</p>
-                            <a href="category.html" class="btn">Repasar</a>
+                    <form class="product_container_form col-12 col-md-3">
+                        <p class="product_container_form_title">121,00 € impuestos inc.</p>
+                        <div class="product_container_form_count">
+                            <p class="product_container_form_count_title">Cantidad</p>
+                            <div class="input-group mb-3">
+                                <input type="number" min="0" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                            </div>
+                            <p class="product_container_form_count_title">Cantidad</p>
+                            <select class="custom-select">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
                         </div>
-                    </div>
+                        <div class="product_container_form_basket">
+                            <button type="submit" class="product_container_form_basket_box">
+                                <div class="box_head">
+                                        <svg class="box_head_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve"><g><g>
+                                            <g>
+                                                <path d="M153,408c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S181.05,408,153,408z M0,0v51h51l91.8,193.8L107.1,306    c-2.55,7.65-5.1,17.85-5.1,25.5c0,28.05,22.95,51,51,51h306v-51H163.2c-2.55,0-5.1-2.55-5.1-5.1v-2.551l22.95-43.35h188.7    c20.4,0,35.7-10.2,43.35-25.5L504.9,89.25c5.1-5.1,5.1-7.65,5.1-12.75c0-15.3-10.2-25.5-25.5-25.5H107.1L84.15,0H0z M408,408    c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S436.05,408,408,408z" data-original="#000000" class="active-path" data-old_color="#ffffff" fill="#ffffff"/>
+                                            </g>
+                                        </g></g> </svg>
+                                </div>
+                                <div class="box_text">
+                                    <p>Añadir al carrito</p>
+                                </div>
+                            </button>
+                        </div>
+                        <img src="img/right1.jpg" alt="" class="product_container_form_cards">
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <div class="menu_container">
-        <img src="img/cancel-black.svg" alt="" class="menu_container_closer">
-        <a href="" class="menu_container_link">Repuestos</a>
-        <a href="" class="menu_container_link">Somieres</a>
-        <a href="" class="menu_container_link">Somierarticulado</a>
-        <a href="" class="menu_container_link">Distribuidor</a>
-        <a href="" class="menu_container_link">Video</a>
-        <a href="" class="menu_container_link">Contacto  </a>
-        <a href="" class="menu_container_link">Carrito</a>
-    </div>
 
-    <script src="libs/jquery-3.3.1/jquery.min.js"></script>
-    <script src="libs/bootstrap-4.2.1/js/bootstrap.bundle.min.js"></script>
-    <script src="libs/bootstrap-4.2.1/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-</html>
+    <footer class="footer">
+            <div class="footer_bg">
+                <div class="wrapper">
+                    <div class="footer_container row">
+                        <div class="footer_container_item col-12 col-md-6 col-lg-2">
+                            <p class="footer_container_item_title">Categorías</p>
+                            <a href="" class="footer_container_item_link">Historia</a>
+                            <a href="" class="footer_container_item_link">Distribuidor</a>
+                            <a href="" class="footer_container_item_link">Noticias</a>
+                            <a href="" class="footer_container_item_link">Contacto</a>
+                        </div>
+                        <div class="footer_container_item col-12 col-md-6 col-lg-2">
+                            <p class="footer_container_item_title">Información</p>
+                            <a href="" class="footer_container_item_link">Historia</a>
+                            <a href="" class="footer_container_item_link">Distribuidor</a>
+                            <a href="" class="footer_container_item_link">Noticias</a>
+                            <a href="" class="footer_container_item_link">Contacto</a>
+                            <a href="" class="footer_container_item_link">Distribuidor</a>
+                            <a href="" class="footer_container_item_link">Noticias</a>
+                            <a href="" class="footer_container_item_link">Contacto</a>
+                        </div>
+                        <div class="footer_container_item col-12 col-md-6 col-lg-2">
+                            <p class="footer_container_item_title">Mi cuenta</p>
+                            <a href="" class="footer_container_item_link">Historia</a>
+                        </div>
+                        <div class="footer_container_item col-12 col-md-6 offset-lg-2 col-lg-4 footer_container_item_info">
+                            <p class="footer_container_item_title">Información sobre la tienda</p>
+                            <a href="" class="footer_container_item_link">
+                                <img src="img/facebook-placeholder-for-locate-places-on-maps.svg" alt="" class="footer_container_item_link_icon">
+                                <p>Global Market Stock S.L, C/ Cava Alta nº13 Bajos 
+                                        45002  Toledo </p>
+                            </a>
+                            <a href="" class="footer_container_item_link">
+                                <img src="img/phone-receiver.svg" alt="" class="footer_container_item_link_icon">
+                                <p>Llámanos ahora: <b>676967608</b></p>
+                            </a>
+                            <a href="" class="footer_container_item_link">
+                                <img src="img/envelope.svg" alt="" class="footer_container_item_link_icon">
+                                <p>Email: <b> hogar24.es@gmail.com</b></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                <div class="wrapper">
+                    <div class="footer_copyright_text">
+                        <p>By</p>
+                        <a href="#">Goala Marketing</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+    
+        <div class="menu_container">
+                <img src="img/cancel-black.svg" alt="" class="menu_container_closer">
+                <a href="" class="menu_container_link">Repuestos</a>
+                <a href="" class="menu_container_link">Somieres</a>
+                <a href="" class="menu_container_link">Somierarticulado</a>
+                <a href="" class="menu_container_link">Distribuidor</a>
+                <a href="" class="menu_container_link">Video</a>
+                <a href="" class="menu_container_link">Contacto  </a>
+                <a href="" class="menu_container_link">Carrito</a>
+            </div>
+        
+            <script src="libs/jquery-3.3.1/jquery.min.js"></script>
+            <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+            <script src="libs/bootstrap-4.2.1/js/bootstrap.bundle.min.js"></script>
+            <script src="libs/bootstrap-4.2.1/js/bootstrap.min.js"></script>
+            <script src="libs/slick/slick.js"></script>
+            <script src="js/main.js"></script>
+        </body>
+        </html>

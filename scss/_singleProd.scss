@@ -1,0 +1,138 @@
+section.sale_product{
+    margin-top: 120px;
+    background: #d60010;
+    .sale_container{
+        align-items: center;
+        &_item{
+            &_img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+#singleProduct{
+    background: #fff;
+}
+
+
+section.product_slider{
+    padding: 40px 0;
+    .product_title{
+            font-size: 56px;
+            line-height: 1em;
+            text-align: center;
+            color: #333;
+    }
+    .product_subtitle{
+        font-size: 36px;
+        line-height: 1.1em;
+        color: #333;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .product_container{
+        align-items: flex-start;
+        &_slider{
+            &_big{
+                .slick-track{
+                    display: flex;
+                    align-items: center;
+                }
+                .slide{
+                }
+                &_img{
+                    width: 100%;
+                }
+            }
+            &_small{
+                .slick-track{
+                    display: flex;
+                    align-items: center;
+                }
+                .slide{
+                    cursor: pointer;
+                }
+                &_img{
+                    width: 100%;
+                }
+            }
+        }
+        &_form{
+            border: 1px solid #999;
+            padding: 0;
+            border-radius: 3px;
+            background: #f6f6f6;
+            &_title{
+                // font-weight: 600;
+                font-size: 29px;
+                line-height: 32px;
+                color: #333;
+                padding: 15px;
+                text-align: center;
+
+            }
+            &_count{
+                padding: 15px;
+                box-shadow: inset 0 6px 6px rgba(0, 0, 0, 0.05);
+                &_title{
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+                .input-group{
+                    .form-control{
+
+                    }
+                }
+                .custom-select{
+
+                }
+            }
+            &_basket{
+                padding: 15px;
+                box-shadow: inset 0 6px 6px rgba(0, 0, 0, 0.05);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+                &_box{
+                    background: #01c6b8;
+                    max-width: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 auto;
+                    border-radius: 5px;
+                    border: 1px solid #1abc9c;
+                    transition: all .2s ease-out;
+                    cursor: pointer;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                    .box_head{
+                        padding: 10px;
+                        display: flex;
+                        justify-content: center;
+                        border-bottom: 1px solid #1abc9c;
+                        &_icon{
+                            height: auto;
+                            width: 30px;
+                        }
+                    }
+                    .box_text{
+                        padding: 10px;
+                        p{
+                            text-align: center;
+                            color: #fff;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            &_cards{
+                padding: 15px;
+                width: 100%;
+                max-width: 150px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+    
+}
