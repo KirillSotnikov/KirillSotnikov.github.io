@@ -18,12 +18,20 @@ switch (pageId) {
         footerFunc();
         menuFunc();
         productSlider();
+        dropdownAdvantage();
     }
     case 'productItem':{
         initSlider();
         modalPartner();
         break;
     }
+}
+
+function dropdownAdvantage(){
+    $('.advantages_container_item').on('click', function(){
+        $(this).find('.advantages_container_item_dropdown').slideToggle('300');
+        $(this).find('.plus_box').toggleClass('active');
+    });
 }
 
 function productSlider(){

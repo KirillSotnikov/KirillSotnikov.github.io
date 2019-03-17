@@ -26,6 +26,26 @@
         background: rgba(255, 255, 255, 0.5);
         z-index: 1;
     }
+    section.product_slider .product_title{
+        font-size: 30px;
+    }
+    section.product_slider .product_subtitle{
+        font-size: 24px;
+    }
+    section.description_product .wrapper .description_title{
+        font-size: 30px;
+        line-height: 32px;
+    }
+    section.about_product .about_product_title{
+        font-size: 30px;
+        line-height: 32px;
+    }
+    section.review_section .review_container_title{
+        font-size: 30px;
+    }
+    section.review_section .review_container_opinion{
+        font-size: 24px;
+    }
     section.categoryTitle_section .category_container_text{
         color: #343434;
     }
