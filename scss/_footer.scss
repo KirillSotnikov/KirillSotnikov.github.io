@@ -48,24 +48,32 @@ footer.footer{
             }
         }
     }
-    .footer_copyright{
-        padding: 20px 0;
-        &_text{
-            display: flex;
-            align-items: center;
-            width: 100%;
-            justify-content: center;
-            p{
-                font-size: 12px;
-                font-style: italic;
-                color: #343434;
-                margin-right: 7px;
-            }
-            a{
-                font-size: 12px;
-                font-style: italic;
-                color: #01c6b8;
-            }
+}
+.footer_cookie{
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    &_text{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        p{
+            font-size: 12px;
+            font-style: italic;
+            color: #fff;
+            margin-right: 7px;
+        }
+        a{
+            font-size: 12px;
+            font-style: italic;
+            color: #fff;
+            padding: 5px 10px;
+            border: 1px solid #fff;
         }
     }
 }

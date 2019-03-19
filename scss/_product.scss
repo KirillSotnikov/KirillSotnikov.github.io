@@ -18,7 +18,7 @@ section.product{
         padding-bottom: 15px;
     }
     .product_title{
-        font-size: 36px;
+        font-size: 30px;
         line-height: 40px;
         color: #fff;
         font-weight: bold;
@@ -28,6 +28,12 @@ section.product{
         font-size: 13;
         color: #fff;
         margin-bottom: 10px;
+    }
+    .product_subtext{
+        font-size: 20px;
+        color: #fff;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .product_grid{
         &_item{

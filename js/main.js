@@ -4,10 +4,12 @@ switch (pageId) {
     case 'partnersPage': {
         modalPartner();
         menuFunc();
+        footerFunc();
         break;
     }
     case 'productsPage':{
         menuFunc();
+        footerFunc();
         break;
     }
     case 'categoryPage':{
@@ -27,6 +29,7 @@ switch (pageId) {
     }
     case 'basketPage': {
         menuFunc();
+        footerFunc();
     }
 }
 
