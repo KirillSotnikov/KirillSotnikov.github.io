@@ -111,3 +111,18 @@ function initSlider(){
         $('html').css('overflow', 'auto');
     });
 }
+
+$('.footer_cookie_text a').click(function(){
+    closeModal();
+});
+
+
+if(localStorage.getItem('cookieKey')){
+    $('.footer_cookie').hide();
+}
+
+
+function closeModal(){
+    $('.footer_cookie').hide();
+    localStorage.setItem('cookieKey', 'cookieItem');
+};

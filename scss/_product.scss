@@ -35,6 +35,26 @@ section.product{
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    .prod_list{
+        &_item{
+            padding-left: 15px;
+            font-size: 13;
+            color: #fff;
+            position: relative;
+            margin-bottom: 10px;
+            &::before{
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 5px;
+                height: 5px;
+                border-radius: 100%;
+                background: #fff;
+            }
+        }
+    }
     .product_grid{
         &_item{
             margin-bottom: 20px;

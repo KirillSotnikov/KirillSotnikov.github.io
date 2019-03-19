@@ -419,6 +419,27 @@ section.product .product_subtext {
   margin-bottom: 20px;
 }
 
+section.product .prod_list_item {
+  padding-left: 15px;
+  font-size: 13;
+  color: #fff;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+section.product .prod_list_item::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: #fff;
+}
+
 section.product .product_grid_item {
   margin-bottom: 20px;
 }
