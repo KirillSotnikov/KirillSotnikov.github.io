@@ -31,6 +31,10 @@ switch (pageId) {
         menuFunc();
         footerFunc();
     }
+    case 'contactsPage': {
+        menuFunc();
+        footerFunc();
+    }
 }
 
 function dropdownAdvantage(){

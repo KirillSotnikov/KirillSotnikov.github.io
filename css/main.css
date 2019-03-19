@@ -1675,6 +1675,127 @@ section.subscribe_product .subscribe_container_item .form-check-label {
   color: #333;
 }
 
+#contactsPage {
+  background-image: url("../img/partner-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+section.contacts_section {
+  padding-top: 170px;
+  padding-bottom: 100px;
+}
+
+section.contacts_section .wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+section.contacts_section .wrapper .contacts_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+section.contacts_section .wrapper .contacts_text_title {
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+section.contacts_section .wrapper .contacts_text_adres {
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+section.contacts_section .wrapper .contacts_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.contacts_section .wrapper .contacts_form_title {
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section.contacts_section .wrapper .contacts_form_grid_item input {
+  width: 100%;
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 11px;
+  line-height: 28px;
+  padding: 3px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+section.contacts_section .wrapper .contacts_form_grid_item textarea {
+  width: 100%;
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 11px;
+  line-height: 28px;
+  padding: 3px;
+  outline: none;
+  min-width: 120px;
+  max-height: 120px;
+  margin-bottom: 20px;
+}
+
+section.contacts_section .wrapper .contacts_form_btn {
+  background: #01c6b8;
+  display: inline-block;
+  padding: 2px 30px 0px;
+  border: 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  border: 1px solid #01c6b8;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+
+section.contacts_section .wrapper .contacts_form_btn:hover {
+  color: #01c6b8;
+  background: #fff;
+}
+
 @media screen and (max-width: 850px) {
   .header_list_links {
     display: none;
