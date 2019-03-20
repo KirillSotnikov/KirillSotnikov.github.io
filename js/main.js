@@ -15,12 +15,14 @@ switch (pageId) {
     case 'categoryPage':{
         footerFunc();
         menuFunc();
+        break;
     }
     case 'singleProduct':{
         footerFunc();
         menuFunc();
         productSlider();
         dropdownAdvantage();
+        break;
     }
     case 'productItem':{
         initSlider();
@@ -30,10 +32,18 @@ switch (pageId) {
     case 'basketPage': {
         menuFunc();
         footerFunc();
+        break;
     }
     case 'contactsPage': {
         menuFunc();
         footerFunc();
+        break;
+    }
+    case 'distributorPage': {
+        menuFunc();
+        footerFunc();
+        animateDistributor();
+        break;
     }
 }
 
@@ -130,3 +140,16 @@ function closeModal(){
     $('.footer_cookie').hide();
     localStorage.setItem('cookieKey', 'cookieItem');
 };
+
+function animateDistributor(){
+    $('.dist_container_item_image').on('mouseover', function(){
+        $(this).find('.dist_container_item_image_box_title span').css({'left':0, 'transition':'all .4s ease-out'});
+    });
+    $('.dist_container_item_image').on('mouseout', function(){
+        let that = $(this);
+        $(this).find('.dist_container_item_image_box_title span').css('left', '100%');
+        setTimeout(function(){
+            that.find('.dist_container_item_image_box_title span').css({'left':'-100%', 'transition':'none'});
+        },400);
+    });
+}

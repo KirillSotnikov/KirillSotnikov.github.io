@@ -48,6 +48,26 @@ footer.footer{
             }
         }
     }
+    .footer_copyright{
+        padding: 20px 0;
+        &_text{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: center;
+            p{
+                font-size: 12px;
+                font-style: italic;
+                color: #333;
+                margin-right: 7px;
+            }
+            a{
+                font-size: 12px;
+                font-style: italic;
+                color: #01c6b8;
+            }
+        }
+    }
 }
 .footer_cookie{
     padding: 20px 0;
