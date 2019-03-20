@@ -81,6 +81,37 @@ section.filter_category{
                     }
                 }
             }
+            &_cost{
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                .box{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    text-align: center;
+                    justify-content: space-between;
+                    padding: 5px 0;
+                    &_text{
+                        font-size: 12px;
+                        color: #888;
+                        &-red{
+                            color: #b81733;
+                            color: #01c6b8;
+                            font-size: 14px;
+                        }
+                    }
+                    &-red{
+                        padding: 5px;
+                        background: #b81733;
+                        background: #01c6b8;
+                        .box_text{
+                            font-size: 14px;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
             &_image{
                 width: 100%;
                 overflow: hidden;

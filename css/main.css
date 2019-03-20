@@ -748,6 +748,56 @@ section.filter_category .filter_grid_item > div:hover .filter_grid_item_title::a
   width: 60px;
 }
 
+section.filter_category .filter_grid_item_cost {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.filter_category .filter_grid_item_cost .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 0;
+}
+
+section.filter_category .filter_grid_item_cost .box_text {
+  font-size: 12px;
+  color: #888;
+}
+
+section.filter_category .filter_grid_item_cost .box_text-red {
+  color: #b81733;
+  color: #01c6b8;
+  font-size: 14px;
+}
+
+section.filter_category .filter_grid_item_cost .box-red {
+  padding: 5px;
+  background: #b81733;
+  background: #01c6b8;
+}
+
+section.filter_category .filter_grid_item_cost .box-red .box_text {
+  font-size: 14px;
+  color: #fff;
+}
+
 section.filter_category .filter_grid_item_image {
   width: 100%;
   overflow: hidden;
