@@ -53,10 +53,26 @@
         max-width: 350px;
     }
 }
+@media screen and (max-width:700px){
+    section.cookie_section .cookie_container{
+        flex-wrap: wrap;
+        // justify-content: center;
+    }
+    section.cookie_section .cookie_container_nav{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+}
 @media screen and (max-width:600px){
     section.services_section .services_container_item .title{
         font-size: 24px;
         line-height: 30px;
+    }
+    section.cookie_section .cookie_container{
+        justify-content: center;
+    }
+    section.cookie_section .cookie_container_box_title{
+        text-align: center;
     }
 }
 

@@ -1,6 +1,9 @@
 section.sale_product{
     margin-top: 120px;
     background: #01c6b8;
+    .wrapper{
+        background: transparent !important;
+    }
     &.big_sale{
         margin-top: 0;
     }
@@ -19,12 +22,24 @@ section.sale_product{
 }
 
 #singleProduct{
-    background: #fff;
+    // background: #fff;
+    background-image: url("../img/prod-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    .wrapper{
+        background: rgba(255, 255, 255, 0.7);
+    }
 }
 
 
 section.product_slider{
-    padding: 40px 0;
+    .wrapper{
+        padding-top: 40px;
+        padding-bottom: 40px;   
+    }
     .product_title{
             font-size: 56px;
             line-height: 1em;
@@ -40,8 +55,10 @@ section.product_slider{
     }
     .product_container{
         align-items: flex-start;
+        margin-right: 0;
         &_slider{
             &_big{
+                border-bottom: 2px solid #01c6b8;
                 .slick-track{
                     display: flex;
                     align-items: center;
@@ -208,11 +225,13 @@ section.advantages_product{
 
 
 section.description_product{
-    padding: 60px 0;
+    // padding: 60px 0;
     .wrapper    {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
         .description_title{
             text-align: center;
             font-size: 60px;
@@ -251,8 +270,12 @@ section.description_product{
 
 
 section.about_product{
-    padding: 60px 0;
-    background: #f4f4f4;
+    // padding: 60px 0;
+    // background: #f4f4f4;
+    .wrapper{
+        padding-top: 60px;
+        padding-block-end: 60px;
+    }
     .about_product_title{
         text-align: center;
         font-size: 60px;

@@ -34,6 +34,11 @@ switch (pageId) {
         footerFunc();
         break;
     }
+    case 'cookiePage': {
+        menuFunc();
+        footerFunc();
+        break;
+    }
     case 'contactsPage': {
         menuFunc();
         footerFunc();
@@ -59,12 +64,14 @@ function productSlider(){
         slidesToShow: 1,
         slidesToScroll: 1,
         asNavFor: '.product_container_slider_small',
+        arrows: false
     });
     $('.product_container_slider_small.slider').slick({
         slidesToShow: 3,
         focusOnSelect: true,
         asNavFor: '.product_container_slider_big',
         slidesToScroll: 1,
+        arrows: false
     });
 }
 
