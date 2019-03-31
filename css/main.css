@@ -1298,6 +1298,7 @@ section.description_product .wrapper .description_title {
 section.description_product .wrapper .description_text {
   font-size: 16px;
   color: #333;
+  width: 100%;
 }
 
 section.description_product .wrapper .description_btn {
