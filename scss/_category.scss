@@ -59,10 +59,12 @@ section.filter_category{
         justify-content: center;
         align-items: center;
         padding: 20px 0;
+        flex-wrap: wrap;
         &_item{
             border: none;
             background: transparent;
             color: #949494;
+            color: #fff;
             font-size: 14px;
             outline: none;
             cursor: pointer;

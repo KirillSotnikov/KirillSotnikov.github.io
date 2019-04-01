@@ -713,12 +713,15 @@ section.filter_category .filter_group {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 section.filter_category .filter_group_item {
   border: none;
   background: transparent;
   color: #949494;
+  color: #fff;
   font-size: 14px;
   outline: none;
   cursor: pointer;
