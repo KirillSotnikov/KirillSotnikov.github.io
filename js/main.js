@@ -15,6 +15,7 @@ switch (pageId) {
     case 'categoryPage':{
         footerFunc();
         menuFunc();
+        animtationPicture();
         break;
     }
     case 'singleProduct':{
@@ -50,6 +51,16 @@ switch (pageId) {
         animateDistributor();
         break;
     }
+}
+
+function animtationPicture(){
+    $('.image_bg').on('click', function(){
+        $(this).toggleClass('active');
+    });
+
+    // $('.categoryTitle_section .second_container').on('mouseout', function(){
+    //     $('.image_bg').removeClass('active');
+    // });
 }
 
 function dropdownAdvantage(){
