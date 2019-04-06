@@ -78,7 +78,7 @@ function productSlider(){
         arrows: false
     });
     $('.product_container_slider_small.slider').slick({
-        slidesToShow: 3,
+        slidesToShow: 4,
         focusOnSelect: true,
         asNavFor: '.product_container_slider_big',
         slidesToScroll: 1,

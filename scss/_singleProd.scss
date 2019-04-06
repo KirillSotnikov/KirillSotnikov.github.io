@@ -30,15 +30,21 @@ section.sale_product{
     background-attachment: fixed;
     width: 100%;
     .wrapper{
-        background: rgba(255, 255, 255, 0.7);
+        background: rgba(255, 255, 255, 0.6);
     }
 }
 
 
 section.product_slider{
+    padding-top: 150px;
+    hr{
+        background: #01c6b8;
+        height: 1.5px;
+    }
     .wrapper{
         padding-top: 40px;
-        padding-bottom: 40px;   
+        padding-bottom: 40px; 
+        // border-bottom: 2px solid #01c6b8;  
     }
     .product_title{
             font-size: 56px;
@@ -67,6 +73,8 @@ section.product_slider{
                 }
                 &_img{
                     width: 100%;
+                    max-height: 600px;
+                    object-fit: cover;
                 }
             }
             &_small{
@@ -78,15 +86,20 @@ section.product_slider{
                     cursor: pointer;
                 }
                 &_img{
-                    width: 100%;
+                    width: 90%;
+                    margin: 0 auto;
+                    display: block;
                 }
             }
         }
         &_form{
-            border: 1px solid #999;
             padding: 0;
-            border-radius: 3px;
-            background: #f6f6f6;
+            .box{
+                border: 1px solid #999;
+                padding: 0;
+                border-radius: 3px;
+                background: #f6f6f6;
+            }
             &_title{
                 // font-weight: 600;
                 font-size: 29px;
@@ -329,7 +342,7 @@ section.about_product{
             &_box{
                 display: flex;
                 align-items: center;
-                margin: 20px 0;
+                margin: 8px 0;
                 &.small_box{
                     align-items: flex-start;
                 }
@@ -355,9 +368,9 @@ section.about_product{
                 }
                 &_img{
                     max-width: 50px;
-                    filter: grayscale(100%);
+                    // filter: grayscale(100%);
                     border-radius: 5px;
-                    border: 1px solid #ccc;
+                    border: 1px solid #01c6b8;
                     margin-right: 10px;
                     width: 100%;
                     &.second_img{
