@@ -9,6 +9,7 @@ header.header {
 header.header .header_logo_item {
   max-width: 270px;
   width: 100%;
+  padding-top: 10px;
 }
 
 header.header .header_container {
