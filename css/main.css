@@ -6,6 +6,11 @@ header.header {
   z-index: 9;
 }
 
+header.header .header_logo_item {
+  max-width: 270px;
+  width: 100%;
+}
+
 header.header .header_container {
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(15%, rgba(255, 255, 255, 0.8)), color-stop(20%, rgba(255, 255, 255, 0.85)), color-stop(25%, rgba(255, 255, 255, 0.9)), color-stop(30%, rgba(255, 255, 255, 0.95)), color-stop(35%, rgba(255, 255, 255, 0.98)), color-stop(40%, white), color-stop(45%, white), color-stop(49%, white), color-stop(50%, white), color-stop(55%, white), color-stop(60%, white), color-stop(65%, rgba(255, 255, 255, 0.98)), color-stop(70%, rgba(255, 255, 255, 0.95)), color-stop(75%, rgba(255, 255, 255, 0.9)), color-stop(80%, rgba(255, 255, 255, 0.85)), color-stop(85%, rgba(255, 255, 255, 0.8)), color-stop(99%, rgba(255, 255, 255, 0.05)), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 15%, rgba(255, 255, 255, 0.85) 20%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.95) 30%, rgba(255, 255, 255, 0.98) 35%, white 40%, white 45%, white 49%, white 50%, white 55%, white 60%, rgba(255, 255, 255, 0.98) 65%, rgba(255, 255, 255, 0.95) 70%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0.85) 80%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 255, 0.05) 99%, rgba(255, 255, 255, 0) 100%);
