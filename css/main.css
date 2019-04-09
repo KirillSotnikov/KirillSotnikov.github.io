@@ -7,7 +7,7 @@ header.header {
 }
 
 header.header .header_logo_item {
-  max-width: 270px;
+  max-width: 300px;
   width: 100%;
   padding-top: 10px;
 }
@@ -1086,10 +1086,11 @@ section.product_slider {
 section.product_slider hr {
   background: #01c6b8;
   height: 1.5px;
+  margin-top: 0;
 }
 
 section.product_slider .wrapper {
-  padding-top: 40px;
+  padding-top: 10px;
   padding-bottom: 20px;
 }
 
@@ -1393,9 +1394,8 @@ section.about_product .about_product_title {
   text-align: center;
   font-size: 60px;
   line-height: 60px;
-  margin-bottom: 30px;
   color: #333;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 section.about_product .about_product_btn {
@@ -1446,9 +1446,9 @@ section.about_product .about_product_container_item_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 8px 0;
 }
 
