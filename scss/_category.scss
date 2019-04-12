@@ -41,7 +41,7 @@ section.categoryTitle_section{
         &_item{
             // width: 100%;
             height: 100%;
-            background-image: url('../img/cat-bg.png');
+            background-image: url('../img/main10.png');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -50,6 +50,9 @@ section.categoryTitle_section{
             top: 0;
             left: 0;
             right: 0;
+            &_lamely{
+                background-image: url('../img/cat-bg.png');
+            }
         }
         .category_container_text{
             transform: translateX(100%);

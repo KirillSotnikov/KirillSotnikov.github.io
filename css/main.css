@@ -687,7 +687,7 @@ section.categoryTitle_section .image_bg.active {
 
 section.categoryTitle_section .image_bg_item {
   height: 100%;
-  background-image: url("../img/cat-bg.png");
+  background-image: url("../img/main10.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -695,6 +695,10 @@ section.categoryTitle_section .image_bg_item {
   top: 0;
   left: 0;
   right: 0;
+}
+
+section.categoryTitle_section .image_bg_item_lamely {
+  background-image: url("../img/cat-bg.png");
 }
 
 section.categoryTitle_section .image_bg .category_container_text {
@@ -1835,7 +1839,7 @@ section.subscribe_product .subscribe_container_item .form-check-label {
 }
 
 #contactsPage {
-  background-image: url("../img/partner-bg.jpg");
+  background-image: url("../img/contact-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2034,6 +2038,9 @@ section.distributor_section .dist_container_item_image:hover {
 
 section.distributor_section .dist_container_item_image_item {
   width: 100%;
+  height: 370px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 section.distributor_section .dist_container_item_image_box {
@@ -2221,12 +2228,26 @@ section.distributor_section .dist_container_item_form_grid_item textarea:focus {
 }
 
 #cookiePage {
-  background: #fff;
+  background-image: url("../img/partner-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+#cookiePage .wrapper {
+  background: rgba(255, 255, 255, 0.6);
 }
 
 section.cookie_section {
-  margin-top: 120px;
-  padding: 60px 0;
+  padding-top: 150px;
+  padding-bottom: 30px;
+}
+
+section.cookie_section .wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 section.cookie_section .cookie_container {
