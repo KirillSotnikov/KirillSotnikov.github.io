@@ -453,6 +453,9 @@ section.product .product_grid_item {
 section.product .product_grid_item_img {
   width: 100%;
   cursor: pointer;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 section.product .product_list {
@@ -474,20 +477,30 @@ section.product .product_list_item_img {
   background-attachment: fixed;
   width: 100%;
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 section.basket_section {
-  padding: 60px 0;
+  padding-top: 140px;
+}
+
+section.basket_section .wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+section.basket_section .basket_empty {
+  font-weight: 500;
+  background-color: #fe9126;
+  border-color: #e4752b;
+  color: #fff;
+  padding: 15px;
+}
+
+section.basket_section .basket_title {
+  color: #555454;
+  text-transform: uppercase;
+  overflow: hidden;
 }
 
 section.basket_section .divTable {
@@ -742,6 +755,10 @@ main {
   z-index: 2;
 }
 
+section.filter_category .wrapper {
+  padding-top: 20px;
+}
+
 section.filter_category .filter_group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -752,7 +769,7 @@ section.filter_category .filter_group {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0;
+  padding-bottom: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
