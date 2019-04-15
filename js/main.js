@@ -144,7 +144,7 @@ function initSlider(){
     });
 }
 
-$('.footer_cookie_text a').click(function(){
+$('.footer_cookie_text span').click(function(){
     closeModal();
 });
 

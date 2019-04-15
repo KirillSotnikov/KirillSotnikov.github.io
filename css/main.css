@@ -157,7 +157,7 @@ section.services_section .services_container_item {
           justify-content: space-between;
   background: rgba(0, 0, 0, 0.7);
   margin-bottom: 50px;
-  padding: 15px 25px;
+  padding: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-transition: all .3s ease-out;
@@ -700,7 +700,7 @@ section.categoryTitle_section .image_bg.active {
 
 section.categoryTitle_section .image_bg_item {
   height: 100%;
-  background-image: url("../img/main10.png");
+  background-image: url("../img/1411.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -755,8 +755,14 @@ main {
   z-index: 2;
 }
 
+section.filter_category {
+  padding-bottom: 20px;
+}
+
 section.filter_category .wrapper {
   padding-top: 20px;
+  background: rgba(255, 255, 255, 0.6);
+  margin-top: 20px;
 }
 
 section.filter_category .filter_group {
@@ -1047,12 +1053,23 @@ footer.footer .footer_copyright_text a {
   margin-right: 7px;
 }
 
-.footer_cookie_text a {
+.footer_cookie_text span {
   font-size: 12px;
   font-style: italic;
   color: #fff;
   padding: 5px 10px;
   border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.footer_cookie_text a {
+  max-width: 150px;
+  width: 100%;
+  color: #fff;
+  margin-right: 10px;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  text-align: center;
 }
 
 section.sale_product {
@@ -1985,15 +2002,24 @@ section.contacts_section .wrapper .contacts_form_btn:hover {
 }
 
 #distributorPage {
-  background: #fff;
+  background-image: url("../img/main-backgroundmin.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
 }
 
 section.distributor_section {
-  margin-top: 120px;
+  padding-top: 140px;
+}
+
+section.distributor_section .wrapper {
+  background: rgba(255, 255, 255, 0.7);
 }
 
 section.distributor_section .dist_container {
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 section.distributor_section .dist_container_item.right_oriented .dist_container_item_title, section.distributor_section .dist_container_item.right_oriented .dist_container_item_subtitle {
@@ -2020,7 +2046,7 @@ section.distributor_section .dist_container_item.right_oriented .dist_container_
 }
 
 section.distributor_section .dist_container_item_title {
-  font-size: 28px;
+  font-size: 24px;
   line-height: 30px;
   font-style: normal;
   font-weight: 700;
@@ -2049,7 +2075,20 @@ section.distributor_section .dist_container_item_image {
   position: relative;
 }
 
-section.distributor_section .dist_container_item_image:hover {
+section.distributor_section .dist_container_item_image::after {
+  position: absolute;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  top: 0;
+}
+
+section.distributor_section .dist_container_item_image:hover::after {
   opacity: .7;
 }
 
@@ -2075,6 +2114,7 @@ section.distributor_section .dist_container_item_image_box {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  z-index: 2;
 }
 
 section.distributor_section .dist_container_item_image_box_text {
@@ -2115,7 +2155,7 @@ section.distributor_section .dist_container_item_image_box_title span {
 }
 
 section.distributor_section .dist_container_item_desc {
-  color: #949494;
+  color: #242424;
   font-size: 14px;
   line-height: 25px;
   font-weight: 400;
@@ -2136,7 +2176,7 @@ section.distributor_section .dist_container_item_form .form-check-input {
 }
 
 section.distributor_section .dist_container_item_form .form-check-label {
-  color: #949494;
+  color: #242424;
   font-size: 14px;
   line-height: 25px;
   font-weight: 400;
@@ -2381,7 +2421,6 @@ section.cookie_section .cookie_container_box_text a {
     margin: 0 -15px;
     position: static;
     width: 100vw;
-    height: 300px;
   }
   section.categoryTitle_section .image_bg.active {
     -webkit-transform: none;
@@ -2389,6 +2428,21 @@ section.cookie_section .cookie_container_box_text a {
   }
   section.categoryTitle_section .image_bg_item {
     background-attachment: fixed;
+  }
+  section.categoryTitle_section .image_bg_item {
+    position: relative;
+    display: none;
+  }
+  section.categoryTitle_section .image_bg .category_container_text {
+    padding: 0 15px;
+  }
+  section.categoryTitle_section .image_bg {
+    padding-top: 0;
+  }
+  section.categoryTitle_section .category_container_text:last-child {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 

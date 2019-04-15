@@ -1,11 +1,20 @@
 #distributorPage{
-    background: #fff;
+    // background: #fff;
+    background-image: url("../img/main-backgroundmin.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
 }
 
 section.distributor_section{
-    margin-top: 120px;
+    padding-top: 140px;
+    .wrapper{
+        background: rgba(255, 255, 255, 0.7);
+    }
     .dist_container{
-        padding-top: 50px;
+        padding-top: 20px;
         &_item{
             &.right_oriented{
                 .dist_container_item_title, .dist_container_item_subtitle{
@@ -21,7 +30,7 @@ section.distributor_section{
                 }
             }
             &_title{
-                font-size: 28px;
+                font-size: 24px;
                 line-height: 30px;
                 font-style: normal;
                 font-weight: 700;
@@ -45,8 +54,22 @@ section.distributor_section{
             &_image{
                 transition: all .4s ease-out;
                 position: relative;
+                &::after{
+                    position: absolute;
+                    z-index: 1;
+                    background: rgba(0, 0, 0, 0.5);
+                    content: '';
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    transition: all .3s ease-out;
+                    top: 0;
+                }
                 &:hover{
-                    opacity: .7;
+                    // opacity: .7;
+                    &::after{
+                        opacity: .7;
+                    }
                 }
                 &_item{
                     width: 100%;
@@ -61,6 +84,7 @@ section.distributor_section{
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
+                    z-index: 2;
                     &_text{
                         font-size: 16px;
                         line-height: 20px;
@@ -97,7 +121,8 @@ section.distributor_section{
                 }
             }
             &_desc{
-                color: #949494;
+                // color: #949494;
+                color: #242424;
                 font-size: 14px;
                 line-height: 25px;
                 font-weight: 400;
@@ -111,7 +136,8 @@ section.distributor_section{
                         margin-top: 6px;
                     }
                     &-label{
-                        color: #949494;
+                        // color: #949494;
+                        color: #242424;
                         font-size: 14px;
                         line-height: 25px;
                         font-weight: 400;

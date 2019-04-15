@@ -41,7 +41,7 @@ section.categoryTitle_section{
         &_item{
             // width: 100%;
             height: 100%;
-            background-image: url('../img/main10.png');
+            background-image: url('../img/1411.png');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -95,10 +95,11 @@ main{
 }
 section.filter_category{
     // background: #f2f2f2;
+    padding-bottom: 20px;
     .wrapper{
         padding-top: 20px;
-        // background: rgba(255, 255, 255, 0.6);
-        // margin-top: 20px;
+        background: rgba(255, 255, 255, 0.6);
+        margin-top: 20px;
     }
     .filter_group{
         display: flex;

@@ -58,13 +58,27 @@
         margin: 0 -15px;
         position: static;
         width: 100vw;
-        height: 300px;
+        // height: 300px;
         &.active{
             transform: none;
         }
         &_item{
             background-attachment: fixed;
         }
+    }
+    section.categoryTitle_section .image_bg_item{
+        position: relative;
+        display: none;
+    }
+    section.categoryTitle_section .image_bg .category_container_text{
+        padding: 0 15px;
+    }
+    section.categoryTitle_section .image_bg{
+        padding-top: 0;
+    }
+    section.categoryTitle_section .category_container_text:last-child{
+        position: static;
+        transform: none;
     }
 }
 @media screen and (max-width:700px){
