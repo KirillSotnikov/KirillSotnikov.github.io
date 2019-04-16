@@ -176,8 +176,11 @@ section.services_section .services_container_item:hover {
 }
 
 section.services_section .services_container_item_img {
-  max-width: 200px;
   width: 100%;
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 20px;
 }
 
 section.services_section .services_container_item .desc {
@@ -228,6 +231,13 @@ section.services_section .services_container_item_text {
   text-align: right;
   max-width: 330px;
   width: 100%;
+}
+
+@media screen and (min-width: 426px) {
+  section.services_section .services_container_item_img {
+    max-width: 250px;
+    margin-top: 0;
+  }
 }
 
 html,
@@ -672,14 +682,16 @@ section.basket_section .basket_section_button {
 }
 
 section.categoryTitle_section {
-  margin-top: 120px;
-  background: #fff;
+  padding-top: 140px;
 }
 
 section.categoryTitle_section .wrapper {
-  max-width: 1000px;
+  max-width: 1200px;
   position: relative;
+  background: rgba(255, 255, 255, 0.6);
   overflow: hidden;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 section.categoryTitle_section .image_bg {
@@ -740,7 +752,7 @@ section.categoryTitle_section .category_container_title {
 
 section.categoryTitle_section .category_container_text {
   margin-bottom: 20px;
-  color: #949494;
+  color: #242424;
   font-size: 14px;
   line-height: 25px;
   font-weight: 400;
@@ -761,8 +773,6 @@ section.filter_category {
 
 section.filter_category .wrapper {
   padding-top: 20px;
-  background: rgba(255, 255, 255, 0.6);
-  margin-top: 20px;
 }
 
 section.filter_category .filter_group {
@@ -803,7 +813,7 @@ section.filter_category .filter_grid_item {
 }
 
 section.filter_category .filter_grid_item > div {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.6);
 }
 
 section.filter_category .filter_grid_item > div:hover .filter_grid_item_image img {
@@ -849,12 +859,10 @@ section.filter_category .filter_grid_item_cost .box {
 
 section.filter_category .filter_grid_item_cost .box_text {
   font-size: 12px;
-  color: #888;
+  color: #242424;
 }
 
 section.filter_category .filter_grid_item_cost .box_text-red {
-  color: #b81733;
-  color: #01c6b8;
   font-size: 14px;
 }
 
@@ -921,7 +929,7 @@ section.filter_category .filter_grid_item_desc {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 12px;
-  color: #888;
+  color: #242424;
 }
 
 footer.footer {
@@ -2317,7 +2325,7 @@ section.cookie_section .cookie_container {
 }
 
 section.cookie_section .cookie_container_nav {
-  max-width: 200px;
+  max-width: 250px;
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.075);
   border-radius: 3px;
